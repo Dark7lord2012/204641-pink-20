@@ -1,12 +1,142 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
+    <title>Пинк - Главная</title>
   </head>
-  <body>
+  <body class="page__body">
+    <header class="header">
+      <a class="header__logo">
+        <img src="#" alt="Pink" class="header__logo-img">
+      </a>
+      <nav class="header__main-nav main-nav">
+        <ul class="main-nav__site-list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="photo.html">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="form.html">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="https://htmlacademy.ru">Html Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+    <main class="main">
+      <h1 class="visually-hidden">Главная страница Пинк</h1>
 
+      <section class="intro">
+        <h2 class="visually-hidden">Промо и ссылки на скачивания для приложения</h2>
+
+        <p class="intro__slogan">
+          Взгляните на жизнь иначе!
+        </p>
+        <a class="intro__link-download" href="#">Скачать приложение</a>
+        <ul class="intro__links-platform">
+          <li>
+            <a class="intro__link intro__link--ios" href="#">
+              <!-- SVG -->
+              <span class="visually-hidden">iOS</span>
+            </a>
+          </li>
+          <li>
+            <a class="intro__link intro__link--android" href="#">
+              <!-- SVG -->
+              <span class="visually-hidden">Android</span>
+            </a>
+          </li>
+          <li>
+            <a class="intro__link intro__link--microsoft" href="#">
+              <!-- SVG -->
+              <span class="visually-hidden">Microsoft</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="info">
+        <h2 class="visually-hidden">Информация о приложении Пинк</h2>
+
+        <p class="info__slogan">Устали от серости мегаполиса?</p>
+        <p class="info__slogan">Нам есть, что предложить!</p>
+
+        <ul class="info__advantages">
+          <li class="info_advantage advantage">
+            <h3 class="advantage__title">Поднимает настроение</h3>
+            <p class="advantage__text">
+              Приложение позволит вам победить осеннюю хандру и
+              депрессию буквально в несколько кликов
+            </p>
+          </li>
+          <li class="info_advantage advantage">
+            <h3 class="advantage__title">Меняет мир вокруг</h3>
+            <p class="advantage__text">
+              Сделайте снимок и украсьте его смайликом
+              или текстовой подписью, чтобы усилить эффект
+            </p>
+          </li>
+          <li class="info_advantage advantage">
+            <h3 class="advantage__title">Заводит новых друзей</h3>
+            <p class="advantage__text">
+              Ставьте лайки, комментируйте, делитесь фотографиями
+              с друзьями и заводите новых
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="reviews">
+        <h2 class="visually-hidden">Отзывы</h2>
+
+        <ul class="reviews__list">
+          <li class="reviews__list-item review">
+            <h3 class="review__title">Николай Петров</h3>
+            <p class="review__text">
+              «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+              А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Тут будут блоки для цен, контактов и карт -->
+    </main>
+
+    <footer class="footer">
+      <a class="footer__logo">
+        <img class="footer__logo-img" src="#" alt="Pink">
+      </a>
+
+      <ul class="footer_social social">
+        <li>
+          <a class="social__link" href="#">
+            <!-- SVG -->
+            <span class="visually-hidden">Twitter</span>
+          </a>
+        </li>
+        <li>
+          <a class="social__link" href="#">
+            <!-- SVG -->
+            <span class="visually-hidden">Facebook</span>
+          </a>
+        </li>
+        <li>
+          <a class="social__link" href="#">
+            <!-- SVG -->
+            <span class="visually-hidden">YouTube</span>
+          </a>
+        </li>
+      </ul>
+
+      <p class="footer__copyright">
+        Разработано <a class="footer__copyright-link"
+        href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
+      </p>
+    </footer>
   </body>
 </html>

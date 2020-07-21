@@ -160,28 +160,39 @@
         </ul>
       </section>
 
-      <div class="filter-photo">
+      <section class="filter-photo">
         <h2 class="visually-hidden">Фильтр фото</h2>
 
-        <p class="filer-photo__text">
-          Затмите их всех! Выкладывайте все, что накопилось в телефоне!
-        </p>
-        <img class="filter-photo__image" src="https://via.placeholder.com/280x374" alt="Загруженное фото: зимняя дорога">
+        <form action="https://echo.htmlacademy.ru" class="filter-photo__form">
+          <p class="filter-photo__text">
+            Затмите их всех! Выкладывайте все, что накопилось в телефоне!
+          </p>
+          <label class="filter-photo__label">
+            <img class="filter-photo__image" src="https://via.placeholder.com/280x374" alt="Загруженное фото: зимняя дорога">
+            <input class="visually-hidden" type="file" name="photo">
+          </label>
 
-        <!-- Что-то интерактивное -->
-        <ul class="filter-photo__filters-list">
-          <li>
-            <button class="filter-photo__filter">Crop</button>
-          </li>
-          <li>
-            <button class="filter-photo__filter">Fill</button>
-          </li>
-          <li>
-            <button class="filter-photo__filter">Contrast</button>
-          </li>
-        </ul>
-        <!-- Ползунок -->
-      </div>
+          <!-- Что-то интерактивное -->
+          <ul class="filter-photo__filters-list">
+            <li>
+              <button class="filter-photo__filter">Crop</button>
+            </li>
+            <li>
+              <button class="filter-photo__filter">Fill</button>
+            </li>
+            <li>
+              <button class="filter-photo__filter">Contrast</button>
+            </li>
+          </ul>
+
+          <!-- Ползунок -->
+          <input class="filter-photo__range" type="range" name="progress-bar-filter">
+
+          <button class="filter-photo__btn-post">Запостить</button>
+          <button class="filter-photo__btn-cancel">Отмена</button>
+
+        </form>
+      </section>
 
     </main>
 

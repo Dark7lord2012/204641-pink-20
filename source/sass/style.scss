@@ -1,4 +1,9 @@
-// Начните писать стили здесь
-body {
-  background-color: grey;
-}
+@import "blocks/fonts.scss";
+@import "blocks/variables.scss";
+@import "blocks/page.scss";
+@import "blocks/visually-hidden.scss";
+@import "blocks/header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/site-list.scss";
+
+@import "blocks/intro.scss";

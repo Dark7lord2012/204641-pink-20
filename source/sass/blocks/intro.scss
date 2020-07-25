@@ -1,0 +1,41 @@
+.intro {
+  color: $white;
+
+  background-color: $grey-blue;
+  background-image: url("../../img/iphone-hand-mobile@1x.png"), url("../../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom, center center;
+  background-size: normal, cover; // ?
+}
+
+.intro__slogan {
+  color: $white;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.intro__link-download {
+  display: block; // временно
+  color: $white;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+
+  //можно позже выделить стили ниже в отдельный блок (типа кнопки)
+  padding: 20px 38px;
+  border: 3px solid $white;
+  border-radius: 29px;
+  box-sizing: border-box;
+}
+
+.intro__text {
+  font-weight: 300;
+  text-align: center;
+}
+
+

@@ -1,0 +1,26 @@
+.info {
+  background-color: $grey;
+}
+
+.info__slogan {
+  margin: 0; // временно
+
+  color: $grey-blue;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.info__advantages {
+  margin: 0;
+  padding: 0;
+  background-color: $back-pale-grey;
+  list-style: none;
+  background-image: url("../../img/iphone-screen-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+
+  outline: 2px solid rgba(black, 0.5);
+  outline-offset: -2px;
+}

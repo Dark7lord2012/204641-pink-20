@@ -9,6 +9,7 @@
 }
 
 .intro__slogan {
+  margin: 0; // временно
   color: $white;
   font-size: 24px;
   line-height: 29px;
@@ -34,6 +35,7 @@
 }
 
 .intro__text {
+  margin: 0; //временно
   font-weight: 300;
   text-align: center;
 }

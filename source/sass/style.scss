@@ -5,10 +5,14 @@
 @import "blocks/header.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/site-list.scss";
+@import "blocks/main.scss";
 @import "blocks/footer.scss";
 
+//index.html
 @import "blocks/intro.scss";
 @import "blocks/info.scss";
 @import "blocks/advantage.scss";
 
-
+//photos.html
+@import "blocks/photos.scss";
+@import "blocks/photo.scss";

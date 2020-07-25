@@ -1,0 +1,16 @@
+.main {
+  color: $white;
+
+  background-color: $grey-blue;
+  background-image: url("../../img/iphone-hand-mobile@1x.png"), url("../../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center top, center top;
+  background-size: contain, cover; // ?
+}
+
+.main__title {
+  font-size: 24px;
+  line-height: 33px;
+  text-align: center;
+  font-weight: 300;
+}

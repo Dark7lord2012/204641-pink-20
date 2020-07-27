@@ -1,0 +1,36 @@
+.intro {
+  color: $white;
+  background-color: $grey-blue;
+}
+
+.intro__slogan {
+  margin: 0; // временно
+  color: $white;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.intro__link-download {
+  display: block; // временно
+  color: $white;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+
+  //можно позже выделить стили ниже в отдельный блок (типа кнопки)
+  padding: 20px 38px;
+  border: 3px solid $white;
+  border-radius: 29px;
+  box-sizing: border-box;
+}
+
+.intro__text {
+  margin: 0; //временно
+  font-weight: 300;
+  text-align: center;
+}

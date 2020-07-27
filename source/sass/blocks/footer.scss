@@ -1,0 +1,12 @@
+.footer {
+  background-color: $white; // дублирование?
+  outline: 2px solid rgba(red, 0.7);
+  outline-offset: -2px;
+}
+
+.footer__copyright {
+  color: $grey-blue;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+}

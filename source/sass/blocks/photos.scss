@@ -1,0 +1,16 @@
+.photos {
+  background-color: $white;
+  color: $grey-blue;
+}
+
+.photos__text {
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.photos__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

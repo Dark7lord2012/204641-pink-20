@@ -48,9 +48,10 @@
 
 .forms__textarea {
   width: 100%; //временно
+
+  font-family: inherit;
   font-size: 18px;
   line-height: 30px;
-  font: inherit;
 }
 
 .forms__btn-submit {

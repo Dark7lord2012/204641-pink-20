@@ -1,0 +1,33 @@
+.price {
+  outline: 2px solid blue;
+  outline-offset: -3px;
+}
+
+.price__title,
+.price__cost {
+  margin: 0;
+  color: $white;
+  background-color: $grey-blue;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.price__title {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.price__cost {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+.price__table-field {
+  color: $grey-blue;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: normal;
+  text-transform: uppercase;
+}

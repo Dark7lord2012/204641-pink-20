@@ -1,0 +1,79 @@
+.forms {
+  background-color: $white;
+  color: $grey-blue;
+}
+
+.forms__text {
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.forms__fieldset--name-family .forms__label,
+.forms__fieldset--contacts .forms__label {
+  color: $pink;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.forms__input-text {
+  font-size: 18px;
+  line-height: 30px;
+  color: $grey-blue;
+}
+
+.forms__fieldset--achievements,
+.forms__fieldset--platforms {
+  background-color: $back-pale-grey;
+}
+
+.forms__legend {
+  color: $pink;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.forms__label-text {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.forms__label {
+  display: block; //временно, для переноса текста
+}
+
+.forms__textarea {
+  width: 100%; //временно
+
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.forms__btn-submit {
+  display: block; // временно
+  width: 100%; //временно
+  color: $white;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+
+  background-color: $green-two;
+  border: 2px solid $green-two;
+  border-radius: 1px;
+}
+
+.forms__note {
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.forms__note-symbol {
+  color: $pink;
+}

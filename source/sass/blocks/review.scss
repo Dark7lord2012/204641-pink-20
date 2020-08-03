@@ -1,0 +1,18 @@
+.review {
+  outline: 1px dashed green;
+  outline-offset: -2px;
+}
+
+.review__title {
+  color: $black;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.review__text {
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+}

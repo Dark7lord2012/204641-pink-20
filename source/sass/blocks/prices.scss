@@ -1,0 +1,12 @@
+.prices {
+  color: $grey-blue;
+  background-color: $white;
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
+
+.prices__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

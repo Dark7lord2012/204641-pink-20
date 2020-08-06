@@ -4,14 +4,20 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
     <title>Пинк - Главная</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- <link href="fonts/opensans.woff2" rel="preload" as="font"> -->
     <!-- <link href="fonts/opensansbold.woff2" rel="preload" as="font"> -->
   </head>
   <body class="page__body">
     <header class="header">
-      <a class="header__logo">
-        <img src="img/logo-pink-white-mobile.svg" alt="Pink" class="header__logo-img">
-      </a>
+      <div class="header__wrapper-logo wrapper">
+        <a class="header__logo">
+          <img src="img/logo-pink-white-mobile.svg" alt="Pink" class="header__logo-img" width="74" height="23">
+        </a>
+        <button class="header__btn-toggle">
+          <span class="visually-hidden">Открыть / Закрыть</span>
+        </button>
+      </div>
       <nav class="header__main-nav main-nav">
         <ul class="main-nav__site-list site-list">
           <li class="site-list__item">
@@ -33,7 +39,7 @@
     <main class="main">
       <h1 class="visually-hidden">Главная страница Пинк</h1>
 
-      <section class="intro">
+      <section class="intro wrapper">
         <h2 class="visually-hidden">Промо и ссылки на скачивания для приложения</h2>
 
         <p class="intro__slogan">
@@ -278,5 +284,6 @@
         href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
       </p>
     </footer>
+    <script src="js/scripts.js"></script>
   </body>
 </html>

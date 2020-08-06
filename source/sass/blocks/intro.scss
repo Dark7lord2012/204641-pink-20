@@ -1,10 +1,13 @@
 .intro {
+  min-height: 462px;
+  padding-top: 30px;
   color: $white;
   background-color: $grey-blue;
+  background-color: transparent;
 }
 
 .intro__slogan {
-  margin: 0; // временно
+  margin: 0 0 320px;
   color: $white;
   font-size: 24px;
   line-height: 29px;
@@ -23,7 +26,7 @@
   text-align: center;
 
   //можно позже выделить стили ниже в отдельный блок (типа кнопки)
-  padding: 20px 38px;
+  padding: 20px;
   border: 3px solid $white;
   border-radius: 29px;
   box-sizing: border-box;

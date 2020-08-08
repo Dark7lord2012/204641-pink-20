@@ -1,26 +1,71 @@
 .info {
-  background-color: $grey;
+  padding-top: 45px;
+  background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 60px;
+  }
+
+
 }
 
 .info__slogan {
-  margin: 0; // временно
+  margin: 0;
 
   color: $grey-blue;
   font-size: 24px;
   line-height: 29px;
   font-weight: 300;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 40px;
+    line-height: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 50px;
+    line-height: 68px;
+  }
+}
+
+.info__slogan + .info__slogan {
+  margin-top: 25px; // примерно
 }
 
 .info__advantages {
   margin: 0;
-  padding: 0;
+  padding: 100px 0 350px; // примерно (из-за треугольника сверху по макету непонятно от чего считать) / для фона айфона
+
   background-color: $back-pale-grey;
   list-style: none;
-  background-image: url("../../img/iphone-screen-mobile@1x.png");
+  background-image:
+    url("../../img/iphone-screen-mobile@1x.png"),
+    url("../../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-position: center calc(100% + 40px), center top;
 
-  outline: 2px solid rgba(black, 0.5);
-  outline-offset: -2px;
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 50%;
+    grid-auto-rows: min-content;
+    justify-content: end;
+    padding: 100px 0 0;
+
+    background-image:
+      url("../../img/iphone-screen-3-tablet@1x.png"),
+      url("../../img/bg-triangle-white.svg");
+    background-position: 20px bottom, center top;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 300px 300px 300px;
+    justify-content: space-between;
+    gap: 20px;
+    padding-right: 130px;
+    padding-left: 130px;
+
+    background-image: url("../../img/bg-triangle-white.svg");
+    background-position: center top;
+  }
 }

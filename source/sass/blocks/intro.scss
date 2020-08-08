@@ -7,7 +7,7 @@
 
   // background-color: $grey-blue;
   background-color: transparent;
-  background-image: url("../../img/iphone-hand-mobile@1x.png");
+  background-image: url("../img/iphone-hand-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: left 110px;
   background-size: 258px 286px;
@@ -19,14 +19,14 @@
     padding-top: 102px;
     padding-bottom: 119px;
 
-    background-image: url("../../img/iphone-hand-tablet@1x.png");
+    background-image: url("../img/iphone-hand-tablet@1x.png");
     background-size: 700px 545px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 370px;
 
-    background-image: url("../../img/iphone-hand-desktop@1x.png");
+    background-image: url("../img/iphone-hand-desktop@1x.png");
     background-size: 1050px 645px;
   }
 }

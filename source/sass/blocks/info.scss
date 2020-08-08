@@ -38,8 +38,8 @@
   background-color: $back-pale-grey;
   list-style: none;
   background-image:
-    url("../../img/iphone-screen-mobile@1x.png"),
-    url("../../img/bg-triangle-white.svg");
+    url("../img/iphone-screen-mobile@1x.png"),
+    url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
   background-position: center calc(100% + 40px), center top;
 
@@ -51,8 +51,8 @@
     padding: 100px 0 0;
 
     background-image:
-      url("../../img/iphone-screen-3-tablet@1x.png"),
-      url("../../img/bg-triangle-white.svg");
+      url("../img/iphone-screen-3-tablet@1x.png"),
+      url("../img/bg-triangle-white.svg");
     background-position: 20px bottom, center top;
   }
 
@@ -63,7 +63,7 @@
     padding-right: 130px;
     padding-left: 130px;
 
-    background-image: url("../../img/bg-triangle-white.svg");
+    background-image: url("../img/bg-triangle-white.svg");
     background-position: center top;
   }
 }

@@ -15,3 +15,11 @@ $green-two: #2aab6d;
 $mobile-width: 320px;
 $tablet-width: 660px;
 $desktop-width: 1200px;
+
+:root {
+  --wrapper-pad: 20px;
+
+  @media (min-width: $desktop-width) {
+    --wrapper-pad: 130px;
+  }
+}

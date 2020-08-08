@@ -25,7 +25,7 @@
 .exploration__svg-timer {
   position: absolute;
   top: 54px;
-  left: 20px;
+  left: var(--wrapper-pad);
 
   width: 238px;
   height: 276px;
@@ -41,8 +41,6 @@
   background-size: 238px 276px;
 
   @media (min-width: $desktop-width) {
-    left: 130px;
-
     width: 298px;
     height: 345px;
     padding-top: 50px;

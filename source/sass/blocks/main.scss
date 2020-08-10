@@ -24,8 +24,18 @@
 .main__title {
   margin: 36px 0 84px; // временно
   padding: 0 20px; //wrapper тут проблематичен
+
   font-size: 24px;
   line-height: 33px;
   text-align: center;
   font-weight: 300;
+
+  @media (min-width: $desktop-width) {
+    max-width: 1200px;
+    outline: 1px solid red;
+    margin-left: auto;
+    margin-right: auto;
+
+    box-sizing: border-box;
+  }
 }

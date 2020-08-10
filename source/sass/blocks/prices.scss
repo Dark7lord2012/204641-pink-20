@@ -1,12 +1,22 @@
 .prices {
+  padding: 100px 0 50px;
   color: $grey-blue;
-  background-color: $white;
+
+  background-image: url("../../img/bg-triangle-white.svg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-color: $back-pale-grey;
+
   outline: 2px solid red;
   outline-offset: -2px;
 }
 
 .prices__list {
   margin: 0;
-  padding: 0;
+  padding: 0 var(--wrapper-pad);
   list-style: none;
+}
+
+.prices__list-item {
+  width: var(--current-width);
 }

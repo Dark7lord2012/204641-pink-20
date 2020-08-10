@@ -1,7 +1,5 @@
 .reviews {
   padding-top: 50px;
-  padding-left: var(--wrapper-pad);
-  padding-right: var(--wrapper-pad);
   padding-bottom: 40px; // приблизительно
 
   color: $grey-blue;
@@ -14,10 +12,12 @@
   @media (min-width: $desktop-width) {
     display: flex;
     padding-top: 72px;
+    justify-content: center;
   }
 }
 
 .reviews__list {
+  max-width: 1080px;
   margin: 0;
   padding: 0;
   list-style: none;

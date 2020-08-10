@@ -8,12 +8,18 @@
     margin-bottom: -110px;
   }
 
+}
+
+.header__wrapper {
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 130px;
-    padding-right: 130px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--wrapper-pad);
+    padding-right: var(--wrapper-pad);
   }
 }
 

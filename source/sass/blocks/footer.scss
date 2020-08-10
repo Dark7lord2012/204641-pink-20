@@ -1,9 +1,17 @@
 .footer {
   background-color: $white; // дублирование?
+}
+
+.footer__wrapper {
   display: grid;
   justify-content: center;
   padding-top: 40px;
   padding-bottom: 50px;
+  padding-left: var(--wrapper-pad);
+  padding-right: var(--wrapper-pad);
+  max-width: 1200px;
+  margin: 0 auto;
+  outline: 1px solid red;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 2fr 1fr;

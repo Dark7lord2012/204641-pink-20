@@ -9,6 +9,8 @@
 
   @media (min-width: $desktop-width) {
     outline-color: red;
-    padding: 0 130px;
+    padding: 0 10px;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 }

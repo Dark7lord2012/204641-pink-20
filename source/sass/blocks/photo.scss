@@ -13,9 +13,28 @@
     width: 100%;
   }
 
-  .photo__link-img::before {
+  // .photo__link-img::before {
+  //   position: absolute;
+  //   right: var(--wrapper-pad);
+
+  //   display: block;
+  //   padding: 6px 20px;
+  //   content: "Панорама дня";
+  //   box-sizing: border-box;
+
+  //   font-size: 12px;
+  //   line-height: 24px;
+  //   color: $white;
+  //   font-weight: bold;
+  //   text-transform: uppercase;
+
+  //   background-color: $pink;
+  // }
+
+  .photo__info-wrapper::before {
     position: absolute;
     right: var(--wrapper-pad);
+    top: 0;
 
     display: block;
     padding: 6px 20px;
@@ -40,7 +59,7 @@
       margin-right: calc(1px - 1px - var(--wrapper-pad));
     }
 
-    .photo__link-img::before {
+    .photo__info-wrapper::before {
       top: 57px;
     }
 
@@ -76,10 +95,9 @@
       width: 100vw;
       left: 50%;
       transform: translateX(-50%);
-
     }
 
-    .photo__link-img::before {
+    .photo__info-wrapper::before {
       top: 54px;
       right: 0;
     }

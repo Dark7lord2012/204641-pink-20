@@ -7,6 +7,7 @@
 
 .photo--panorama-of-the-day {
   position: relative;
+  width: 100%;
 
   .photo__img {
     width: 100%;
@@ -62,8 +63,20 @@
   }
 
   @media (min-width: $desktop-width) {
+    outline: 1px solid red;
+    position: relative;
+
     .photo__img {
       height: 506px;
+      width: 100%;
+    }
+
+    .photo__link-img {
+      position: relative;
+      width: 100vw;
+      left: 50%;
+      transform: translateX(-50%);
+
     }
 
     .photo__link-img::before {

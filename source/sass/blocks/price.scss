@@ -1,4 +1,7 @@
 .price {
+  padding-top: 19px;
+  background-color: $grey-blue;
+  color: $white;
   outline: 2px solid blue;
   outline-offset: -3px;
 }
@@ -7,25 +10,45 @@
 .price__cost {
   margin: 0;
   color: $white;
-  background-color: $grey-blue;
   text-align: center;
   text-transform: uppercase;
 }
 
 .price__title {
+  margin-bottom: 19px;
+
   font-size: 16px;
   line-height: 30px;
   font-weight: bold;
 }
 
 .price__cost {
+  margin-bottom: 35px;
+
   font-size: 18px;
   line-height: 30px;
   font-weight: 300;
 }
 
-.price__table-field {
+.price__table-options {
+  width: 100%;
+  background-color: $white;
   color: $grey-blue;
+}
+
+.price__table-options tr {
+  border: 2px solid $grey;
+  background-color: $white;
+}
+
+.price__table-field,
+.price__table-value {
+  padding: 18px;
+  box-sizing: border-box;
+  background-color: $white;
+}
+
+.price__table-field {
   font-size: 14px;
   line-height: 30px;
   font-weight: normal;

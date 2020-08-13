@@ -20,3 +20,67 @@
 .prices__list-item {
   width: var(--current-width);
 }
+
+.prices__table {
+  width: 100%;
+  border-collapse: collapse;
+
+  .none {
+    display: none;
+  }
+
+  td, th {
+    padding: 5px;
+    margin: 0;
+    background-color: grey;
+
+  }
+
+  span {
+    display: none;
+
+    &::before {
+      display: none;
+      content: attr(data-option);
+    }
+  }
+
+  td:first-child {
+    background-color: orange;
+  }
+
+  td:nth-child(2) {
+    background-color: red;
+  }
+
+  td:nth-child(3) {
+    background-color: green;
+  }
+
+  td:nth-child(4) {
+    background-color: blue;
+  }
+}
+
+.prices__table--slide-1 td:nth-child(2) {
+  &> span {
+    display: block;
+  }
+}
+
+.prices__table--slide-1 td:nth-child(4) {
+  display: none;
+}
+
+.prices__table--slide-2 td:nth-child(3) > span {
+  display: block;
+  width: 100%;
+}
+
+.prices__table--slide-3 td:nth-child(4) > span {
+  display: block;
+  width: 100%;
+}
+.prices__table--slide-3 td:nth-child(2) {
+  display: none;
+}

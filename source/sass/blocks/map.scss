@@ -1,0 +1,36 @@
+.map {
+  position: relative;
+  outline: 4px solid rgba(red, 0.5);
+  outline-offset: -4px;
+  height: 200px;
+  overflow: hidden;
+  background-size: contain;
+}
+
+.map__image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.map__frame {
+
+}
+
+.map__frame::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 123px;
+  // transform: ;
+  background-image: url("../../img/bg-triangle-white-footer.svg");
+  background-repeat: no-repeat;
+  background-size: 1200px 123px;
+  background-position: top center;
+  display: block;
+  background-color: rgba(pink, 0.5);
+  // width: 100%;
+  content: "";
+}

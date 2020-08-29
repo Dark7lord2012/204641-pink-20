@@ -10,6 +10,12 @@
 
   outline: 2px solid red;
   outline-offset: -2px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: var(--wrapper-pad);
+    padding-right: var(--wrapper-pad);
+  }
+
 }
 
 .prices__wrapper {
@@ -18,6 +24,14 @@
   margin: 0 auto;
   outline: 1px solid red;
   overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1200px;
+  }
 }
 
 .prices__table {
@@ -26,7 +40,8 @@
   box-sizing: border-box;
   border-collapse: collapse;
 
-  th, td {
+  th,
+  td {
     width: 33%;
     border: 2px solid $grey;
   }
@@ -45,13 +60,18 @@
     transform: translateX(-66%);
     transition: 0.5s;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+
+    th, td {
+      width: 25%;
+    }
+  }
 }
 
-.prices__table-head {
-
-  th:not(:first-child) {
-    background-color: $grey-blue;
-  }
+.prices__table-head th:not(:first-child) {
+  background-color: $grey-blue;
 }
 
 .prices__slider-btns {
@@ -61,4 +81,7 @@
   padding: 0;
   list-style: none;
 
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

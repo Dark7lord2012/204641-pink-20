@@ -163,206 +163,69 @@
       <section class="prices">
         <h2 class="visually-hidden">Цены</h2>
 
-        <ul class="prices__list prices__list--slide-1">
-          <li class="prices__list-item price price--1">
-            <h3 class="price__title">База</h3>
-            <p class="price__cost">1,99 USD</p>
-            <table class="price__table-options">
+        <div class="prices__wrapper">
+          <table class="prices__table">
+            <thead class="prices__table-head">
               <tr>
-                <td class="price__table-field">
-                  Розовый фильтр
-                </td>
-                <td class="price__table-value">
+                <th class="price__title price__title--empty"></th>
+                <th class="price__title">
+                  База
+                  <p class="price__cost">1,99 USD</p>
+                </th>
+                <th class="price__title price__title--hit">
+                  Стандарт
+                  <p class="price__cost">3,99 USD</p>
+                </th>
+                <th class="price__title">
+                  Анлим
+                  <p class="price__cost">9,99 USD</p>
+                </th>
+              </tr>
+            </thead>
+            <tbody class="price__table">
+              <tr>
+                <td class="price__field price__field--empty">Розовый фильтр</td>
+                <td class="price__field price__field--yes">
+                  <span>Розовый фильтр</span>
                   <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
                     <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
                   </svg>
-                  <span class="visually-hidden">Да</span>
                 </td>
-              </tr>
-              <tr>
-                <td class="price__table-field">
-                  Смайлики
-                </td>
-                <td class="price__table-value">
+                <td class="price__field price__field--yes">
+                  <span>Розовый фильтр</span>
                   <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
                     <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
                   </svg>
-                  <span class="visually-hidden">Нет</span>
                 </td>
-              </tr>
-              <tr>
-                <td class="price__table-field">
-                  Комментарии
-                </td>
-                <td class="price__table-value">
-                  <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
-                    <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
-                  </svg>
-                  <span class="visually-hidden">Нет</span>
-                </td>
-              </tr>
-            </table>
-          </li>
-
-          <li class="prices__list-item price price--2">
-            <h3 class="price__title">Стандарт</h3>
-            <p class="price__cost">3,99 USD</p>
-            <table class="price__table-options">
-              <tr>
-                <td class="price__table-field">
-                  Розовый фильтр
-                </td>
-                <td class="price__table-value">
+                <td class="price__field price__field--yes">
+                  <span>Розовый фильтр</span>
                   <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
                     <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
                   </svg>
-                  <span class="visually-hidden">Да</span>
                 </td>
               </tr>
               <tr>
-                <td class="price__table-field">
-                  Смайлики
-                </td>
-                <td class="price__table-value">
+                <td class="price__field price__field--empty">Смайлики</td>
+                <td class="price__field price__field--no">
+                  <span>Смайлики</span>
                   <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
                     <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
                   </svg>
-                  <span class="visually-hidden">Да</span>
                 </td>
+                <td class="price__field price__field--yes">Смайлики</td>
+                <td class="price__field price__field--yes">Смайлики</td>
               </tr>
               <tr>
-                <td class="price__table-field">
-                  Комментарии
-                </td>
-                <td class="price__table-value">
-                  <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
-                    <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
-                  </svg>
-                  <span class="visually-hidden">Нет</span>
-                </td>
+                <td class="price__field price__field--empty">Комментарии</td>
+                <td class="price__field price__field--no">Комментарии</td>
+                <td class="price__field price__field--no">Комментарии</td>
+                <td class="price__field price__field--yes">Комментарии</td>
               </tr>
-            </table>
-          </li>
+            </tbody>
+          </table>
+        </div>
 
-          <li class="prices__list-item price price--3">
-            <h3 class="price__title">Анлим</h3>
-            <p class="price__cost">9,99 USD</p>
-            <table class="price__table-options">
-              <tr>
-                <td class="price__table-field">
-                  Розовый фильтр
-                </td>
-                <td class="price__table-value">
-                  <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
-                    <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
-                  </svg>
-                  <span class="visually-hidden">Да</span>
-                </td>
-              </tr>
-              <tr>
-                <td class="price__table-field">
-                  Смайлики
-                </td>
-                <td class="price__table-value">
-                  <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
-                    <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
-                  </svg>
-                  <span class="visually-hidden">Да</span>
-                </td>
-              </tr>
-              <tr>
-                <td class="price__table-field">
-                  Комментарии
-                </td>
-                <td class="price__table-value">
-                  <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
-                    <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
-                  </svg>
-                  <span class="visually-hidden">Да</span>
-                </td>
-              </tr>
-            </table>
-          </li>
-        </ul>
-
-        <!-- <input class="btn-1" type="radio" id="btn-1" name="toggle" checked>
-        <input class="btn-2" type="radio" id="btn-2" name="toggle">
-        <input class="btn-3" type="radio" id="btn-3" name="toggle"> -->
-
-        <table class="prices__table prices__table--slide-1">
-          <thead>
-            <tr>
-              <th class="none">
-                <span></span>
-              </th>
-              <th class="price__title">
-                <span>База</span>
-              </th>
-              <th class="price__title">
-                <span>Стандарт</span>
-              </th>
-              <th class="price__title">
-                <span>Анлим</span>
-              </th>
-            </tr>
-            <tr>
-              <th class="none"></th>
-              <th class="price__cost">
-              <span>1,99 USD</span>
-              </th>
-              <th class="price__cost">
-              <span>3,99 USD</span>
-              </th>
-              <th class="price__cost">
-              <span>9,99 USD</span>
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="none">
-                <span>Розовый фильтр</span>
-              </td>
-              <td>
-                <span data-option-pink="Розовый фильтр">Да</span>
-              </td>
-              <td>
-                <span data-option-pink="Розовый фильтр">Да</span>
-              </td>
-              <td>
-                <span data-option-pink="Розовый фильтр">Да</span>
-              </td>
-            </tr>
-            <tr>
-              <td class="none">Смайлики</td>
-              <td>
-                <span data-option-pink="Смайлики">Нет</span>
-              </td>
-              <td>
-                <span data-option-pink="Смайлики">Да</span>
-              </td>
-              <td>
-                <span data-option-pink="Смайлики">Да</span>
-              </td>
-            </tr>
-            <tr>
-              <td class="none">
-                <span>Комментарии</span>
-              </td>
-              <td>
-                <span data-option-pink="Смайлики">Нет</span>
-              </td>
-              <td>
-                <span data-option-pink="Смайлики">Нет</span>
-              </td>
-              <td>
-                <span data-option-pink="Смайлики">Да</span>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-
-        <ul>
+        <ul class="prices__slider-btns">
           <li>
             <button class="prices__btn-price prices__btn-price--1" type="button">1</button>
           </li>
@@ -398,16 +261,15 @@
         </address>
       </section>
 
-      <section class="map">
+      <!-- <section class="map">
         <h2 class="visually-hidden">Карта</h2>
         <img class="map__image" src="img/bg-map-mobile@1x.png" alt="Карта" width="320" height="645">
-        <!-- Интерактивная карта -->
-        <div class="map__frame">
-          <iframe src="https://yandex.ru/map-widget/v1/-/CCQtEVB6GB"
+        <div class="map__wrapper-frame">
+          <iframe class="map__frame" src="https://yandex.ru/map-widget/v1/-/CCQtEVB6GB"
             width="320" height="200"></iframe>
         </div>
         <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.323117%2C59.938635&source=wizgeo&utm_medium=mapframe&utm_source=maps&z=18.81" style="color:#eee;font-size:12px;position:absolute;top:14px;">Большая Конюшенная улица, 19/8 — Яндекс.Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCQtEVB6GB" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
-      </section>
+      </section> -->
     </main>
 
     <footer class="footer">

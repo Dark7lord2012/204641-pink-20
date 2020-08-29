@@ -4,6 +4,7 @@
 
   background-image: url("../../img/bg-triangle-white.svg");
   background-position: center top;
+  background-size: 100% auto;
   background-repeat: no-repeat;
   background-color: $back-pale-grey;
 
@@ -11,88 +12,53 @@
   outline-offset: -2px;
 }
 
-.prices__list {
-  margin: 0;
-  padding: 0 var(--wrapper-pad);
-  list-style: none;
-}
-
-.prices__list-item {
-  width: var(--current-width);
+.prices__wrapper {
+  width: 320px;
+  overflow: hidden;
+  margin: 0 auto;
+  outline: 1px solid red;
+  overflow: hidden;
 }
 
 .prices__table {
-  width: 100%;
+  width: calc(300% - 40px);
+  overflow: hidden;
+  box-sizing: border-box;
   border-collapse: collapse;
 
-  .none {
-    display: none;
+  th, td {
+    width: 33%;
+    border: 2px solid $grey;
   }
 
-  td,
-  th {
-    padding: 0;
-    margin: 0;
-    background-color: pink;
-    box-sizing: border-box;
-    border: 1px solid grey;
+  &--slide-1 {
+    transform: translateX(0%);
+    transition: 0.5s;
   }
 
-  span {
-    display: none;
-
-    &::before {
-      display: none;
-      content: attr(data-option);
-    }
+  &--slide-2 {
+    transform: translateX(-33%);
+    transition: 0.5s;
   }
 
-  td:first-child {
-    background-color: orange;
-  }
-
-  td:nth-child(2) {
-    background-color: red;
-    border: 1px solid white;
-  }
-
-  td:nth-child(3) {
-    background-color: green;
-    border: 1px solid black;
-  }
-
-  td:nth-child(4) {
-    background-color: blue;
-    border: 1px solid grey;
+  &--slide-3 {
+    transform: translateX(-66%);
+    transition: 0.5s;
   }
 }
 
-.prices__table--slide-1 td:nth-child(2),
-.prices__table--slide-1 th:nth-child(2) {
-  span {
-    display: block;
-    width: 280px;
+.prices__table-head {
+
+  th:not(:first-child) {
+    background-color: $grey-blue;
   }
 }
 
-.prices__table--slide-1 td:nth-child(4),
-.prices__table--slide-1 th:nth-child(4) {
-  display: none;
-}
+.prices__slider-btns {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 
-.prices__table--slide-2 td:nth-child(3) > span,
-.prices__table--slide-2 th:nth-child(3) > span {
-  display: block;
-  width: 100%;
-}
-
-.prices__table--slide-3 td:nth-child(4) > span,
-.prices__table--slide-3 th:nth-child(4) > span {
-  display: block;
-  width: 100%;
-}
-
-.prices__table--slide-3 td:nth-child(2),
-.prices__table--slide-3 th:nth-child(2) {
-  display: none;
 }

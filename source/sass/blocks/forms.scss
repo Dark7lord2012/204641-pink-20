@@ -7,6 +7,12 @@
 .forms__form {
   display: flex;
   flex-wrap: wrap;
+
+  @media (min-width: $desktop-width) {
+    max-width: 1200px;
+    margin: 0 auto;
+    outline: 1px solid pink;
+  }
 }
 
 .forms__text {
@@ -15,6 +21,10 @@
   font-size: 14px;
   line-height: 30px;
   text-align: center;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 50px;
+  }
 }
 
 .forms__fieldset {
@@ -25,14 +35,8 @@
 
   @media (min-width: $tablet-width) {
     padding: 0 60px 42px;
-    margin: 0 var(--wrapper-pad);
+    margin: 0 var(--wrapper-pad) 20px;
     border: 2px solid $grey;
-  }
-}
-
-.forms__fieldset + .forms__fieldset {
-  @media (min-width: $tablet-width) {
-    margin-top: 30px;
   }
 }
 
@@ -41,6 +45,11 @@
   .forms__label {
     display: flex;
     flex-direction: column;
+
+    color: $pink;
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: uppercase;
   }
 }
 
@@ -60,11 +69,26 @@
       margin-left: 20px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    width: 430px;
+    flex-grow: 1;
+    outline: 1px solid red;
+    box-sizing: border-box;
+  }
 }
 
 .forms__fieldset--platforms {
   @media (min-width: $tablet-width) {
     order: -2;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 430px;
+    flex-grow: 1;
+    margin-left: 74px;
+    outline: 1px solid red;
+    box-sizing: border-box;
   }
 }
 
@@ -76,14 +100,24 @@
       order: 1;
     }
   }
-}
 
-.forms__fieldset--name-family .forms__label,
-.forms__fieldset--contacts .forms__label {
-  color: $pink;
-  font-size: 14px;
-  line-height: 30px;
-  text-transform: uppercase;
+  @media (min-width: $desktop-width) {
+    margin-top: 40px;
+
+    .forms__fieldset-wrapper {
+      display: flex;
+    }
+
+    .forms__label {
+      width: 371px;
+      flex-grow: 1;
+      box-sizing: border-box;
+    }
+
+    .forms__label + .forms__label {
+      margin-left: 74px;
+    }
+  }
 }
 
 .forms__input-text {
@@ -98,6 +132,15 @@
 
   @media (min-width: $tablet-width) {
     background-color: $white;
+  }
+}
+
+.forms__fieldset--achievements {
+  @media (min-width: $desktop-width) {
+    .forms__fieldset-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
   }
 }
 
@@ -158,6 +201,12 @@
   background-color: $green-two;
   border: 2px solid $green-two;
   border-radius: 1px;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    margin-left: var(--wrapper-pad);
+    box-sizing: border-box;
+  }
 }
 
 .forms__note {
@@ -166,6 +215,13 @@
   line-height: 30px;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    margin-right: var(--wrapper-pad);
+    align-self: center;
+    box-sizing: border-box;
+  }
 }
 
 .forms__note-symbol {

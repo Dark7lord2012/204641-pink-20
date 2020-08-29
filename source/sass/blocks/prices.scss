@@ -15,7 +15,6 @@
     padding-left: var(--wrapper-pad);
     padding-right: var(--wrapper-pad);
   }
-
 }
 
 .prices__wrapper {
@@ -23,7 +22,6 @@
   overflow: hidden;
   margin: 0 auto;
   outline: 1px solid red;
-  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     width: 100%;
@@ -64,7 +62,8 @@
   @media (min-width: $tablet-width) {
     width: 100%;
 
-    th, td {
+    th,
+    td {
       width: 25%;
     }
   }

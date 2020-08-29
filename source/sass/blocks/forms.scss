@@ -1,12 +1,81 @@
 .forms {
+  padding-top: 54px;
   background-color: $white;
   color: $grey-blue;
 }
 
+.forms__form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .forms__text {
+  margin: 0 var(--wrapper-pad);
+
   font-size: 14px;
   line-height: 30px;
   text-align: center;
+}
+
+.forms__fieldset {
+  width: 100%;
+  margin: 0;
+  padding: 42px var(--wrapper-pad);
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 60px 42px;
+    margin: 0 var(--wrapper-pad);
+    border: 2px solid $grey;
+  }
+}
+
+.forms__fieldset + .forms__fieldset {
+  @media (min-width: $tablet-width) {
+    margin-top: 30px;
+  }
+}
+
+.forms__fieldset--name-family,
+.forms__fieldset--contacts {
+  .forms__label {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.forms__fieldset--name-family {
+  @media (min-width: $tablet-width) {
+    padding-top: 42px;
+    border: none;
+    order: -3;
+
+    .forms__label {
+      flex-direction: row;
+      margin-bottom: 30px;
+    }
+
+    .forms__input-text {
+      flex-grow: 1;
+      margin-left: 20px;
+    }
+  }
+}
+
+.forms__fieldset--platforms {
+  @media (min-width: $tablet-width) {
+    order: -2;
+  }
+}
+
+.forms__fieldset--contacts {
+  @media (min-width: $tablet-width) {
+    order: -1;
+
+    .forms__label-text {
+      order: 1;
+    }
+  }
 }
 
 .forms__fieldset--name-family .forms__label,
@@ -26,15 +95,38 @@
 .forms__fieldset--achievements,
 .forms__fieldset--platforms {
   background-color: $back-pale-grey;
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+  }
 }
 
 .forms__legend {
+  margin: 0;
+
   color: $pink;
   font-size: 14px;
   line-height: 18px;
   font-weight: normal;
   text-align: center;
   text-transform: uppercase;
+
+  &--hidden {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    top: -9px;
+    width: max-content;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color: $white;
+
+    &--hidden {
+      display: block;
+    }
+  }
 }
 
 .forms__label-text {
@@ -43,7 +135,7 @@
 }
 
 .forms__label {
-  display: block; //временно, для переноса текста
+  display: block;
 }
 
 .forms__textarea {
@@ -55,8 +147,9 @@
 }
 
 .forms__btn-submit {
-  display: block; // временно
-  width: 100%; //временно
+  display: block;
+  width: calc(100% - 2 * (var(--wrapper-pad)));
+  margin: 20px auto;
   color: $white;
   font-size: 18px;
   line-height: 30px;
@@ -68,6 +161,7 @@
 }
 
 .forms__note {
+  margin: 0 var(--wrapper-pad);
   font-size: 14px;
   line-height: 30px;
   text-align: center;

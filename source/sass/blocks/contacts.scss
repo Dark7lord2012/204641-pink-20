@@ -6,6 +6,11 @@
   color: $grey-blue;
   background-color: $white;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .contacts__text {
@@ -16,6 +21,37 @@
   font-weight: 300;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+}
+
+.contacts__phone,
+.contacts__email {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 33%;
+  }
+}
+
+.contacts__address-wrapper {
+  @media (min-width: $tablet-width) {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 33%;
+    margin: auto;
+  }
 }
 
 .contacts__title {

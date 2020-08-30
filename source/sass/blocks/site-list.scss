@@ -64,5 +64,9 @@
     &[href]:active {
       color: rgba($white, 0.3);
     }
+
+    &--active {
+      border-bottom: 2px solid $white;
+    }
   }
 }

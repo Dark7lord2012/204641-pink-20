@@ -66,11 +66,21 @@
   text-decoration: none;
   text-align: center;
 
-  //можно позже выделить стили ниже в отдельный блок (типа кнопки)
   padding: 20px;
   border: 3px solid $white;
   border-radius: 29px;
   box-sizing: border-box;
+
+  &:hover,
+  &:focus {
+    color: $pink;
+    background-color: $white;
+  }
+
+  &:active {
+    color: rgba($pink, 0.3);
+    background-color: $white;
+  }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 46px;

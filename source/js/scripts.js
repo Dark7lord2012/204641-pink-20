@@ -47,7 +47,7 @@ ymaps.ready(function () {
 
       myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
           hintContent: 'Собственный значок метки',
-          balloonContent: 'Студия Нёрдс'
+          balloonContent: 'Pink'
       }, {
           iconLayout: 'default#image',
           iconImageHref: 'img/icon-map-marker.svg',

@@ -50,4 +50,23 @@
 
   color: $white;
   text-decoration: none;
+
+  &[href]:hover,
+  &[href]:focus {
+    color: $pink;
+  }
+
+  &[href]:active {
+    color: rgba($pink, 0.3);
+  }
+
+  @media (min-width: $desktop-width) {
+    &[href]:active {
+      color: rgba($white, 0.3);
+    }
+
+    &--active {
+      border-bottom: 2px solid $white;
+    }
+  }
 }
